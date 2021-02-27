@@ -19,13 +19,15 @@ export default function Thing() {
             console.log(thing)
         })
           
-    }, [])
+    }, [thingNum])
+
+   
 
     return(
         <div>
-            <h2>testing time! Here is the number {thingNum}</h2>
             <p><strong>Name:</strong> {thing.name}</p>
             <button onClick={updateNum}>Random</button>
+            <p>API by the folks at <a href="https://swapi.dev/">swapi.dev</a></p>
         </div>
     )
 }
